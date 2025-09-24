@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baratie Doces e Delícias</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos Globais */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f48e;
+            color: #4b2c20;
+        }
+
+        /* Estilo do Cabeçalho e Título */
+        header {
+            background-color: #eedb8f;
+            padding: 50px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .titulo-destaque {
+            font-family: "Dancing Script", cursive;
+            font-size: 4em;
+            color: #8b0000;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 0;
+            animation-name: brilho-titulo;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+
+        @keyframes brilho-titulo {
+            0% {
+                color: #8b0000;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            }
+            50% {
+                color: #ff4500;
+                text-shadow: 0 0 10px #ff4500, 0 0 20px #ff4500;
+            }
+            100% {
+                color: #8b0000;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            }
+        }
+
+        /* Estilo da Seção de Navegação */
+        .menu-navegacao {
+            background-color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .menu-navegacao ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .menu-navegacao a {
+            text-decoration: none;
+            color: #8b0000;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .menu-navegacao a:hover {
+            color: #ff4500;
+        }
+        
+        /* Estilo para as 3 colunas (seu esboço) */
+        .container-flex {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .coluna {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex-basis: 30%;
+            text-align: center;
+        }
+
+        .coluna h2 {
+            color: #8b0000;
+            font-size: 1.5em;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="titulo-destaque">Baratie <br> Doces e Delícias</h1>
+    </header>
+
+    <section class="menu-navegacao">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Trabalhe Conosco</a></li>
+            <li><a href="#">Promo do Dia</a></li>
+            <li><a href="#">Seus Pontos</a></li>
+            <li><a href="#">Feedbacks</a></li>
+            <li><a href="#">Sugestões</a></li>
+        </ul>
+    </section>
+
+    <div class="container-flex">
+        <div class="coluna">
+            <h2>Contato e Promoção</h2>
+            <p>Entre em contato conosco:</p>
+            <ul>
+                <li><strong>Email:</strong> contato@baratiedoces.com.br</li>
+                <li><strong>CPF para a promoção:</strong> XXX.XXX.XXX-XX</li>
+                <li><strong>Sim!</strong></li>
+            </ul>
+        </div>
+
+        <div class="coluna">
+            <h2>Quem Somos</h2>
+            <p>Nossa história é feita de paixão por doces e dedicação em cada receita. Usamos ingredientes selecionados para criar delícias que encantam o paladar e aquecem o coração.</p>
+        </div>
+
+        <div class="coluna">
+            <h2>Fidelidade e Benefícios</h2>
+            <p>Participe do nosso programa de fidelidade e ganhe benefícios exclusivos. A cada compra, acumule pontos e troque por doces e descontos especiais!</p>
+        </div>
+    </div>
+
+</body>
+</html>
